@@ -1,0 +1,3 @@
+C:/Users/jose_/CLionProjects/ArvoreB/cmake-build-debug/CMakeFiles/ArvoreB.dir
+C:/Users/jose_/CLionProjects/ArvoreB/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jose_/CLionProjects/ArvoreB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
