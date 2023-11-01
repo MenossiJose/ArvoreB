@@ -1,7 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "btree.h"
-#include "btree.c"
+#include "deletion.h"
+
+// Delete operaiton
+void delete (int item, struct BTreeNode *myNode) {
+    struct BTreeNode *tmp;
+    if (!delValFromNode(item, myNode)) {
+        printf("Not present\n");
+        return;
+    } else {
+        if (myNode->count == 0) {
+            tmp = myNode;
+            myNode = myNode->linker[0];
+            free(tmp);
+        }
+    }
+    root = myNode;
+}
 
 // Merge the nodes
 void mergeNodes(struct BTreeNode *myNode, int pos) {
@@ -29,19 +45,3 @@ void mergeNodes(struct BTreeNode *myNode, int pos) {
     free(x1);
 }
 
-// Delete operaiton
-void delete (int item, struct BTreeNode *myNode) {
-    struct BTreeNode *tmp;
-    if (!delValFromNode(item, myNode)) {
-        printf("Not present\n");
-        return;
-    } else {
-        if (myNode->count == 0) {
-            tmp = myNode;
-            myNode = myNode->linker[0];
-            free(tmp);
-        }
-    }
-    root = myNode;
-    return;
-}

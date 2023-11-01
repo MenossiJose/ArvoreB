@@ -1,18 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "btree.h"
-#include "insertion.c"
-#include "deletion.c"
+#include "deletion.h"
+#include "insertion.h"
 
-struct BTreeNode *createNode(int item, struct BTreeNode *child) {
-    struct BTreeNode *newNode;
-    newNode = (struct BTreeNode *)malloc(sizeof(struct BTreeNode));
-    newNode->item[1] = item;
-    newNode->count = 1;
-    newNode->linker[0] = root;
-    newNode->linker[1] = child;
-    return newNode;
-}
 
 // Add value to the node
 void addValToNode(int item, int pos, struct BTreeNode *node, struct BTreeNode *child ) {
@@ -234,9 +224,10 @@ int main() {
 
     traversal(root);
 
-    delete (20, root);
+    delete(20, root);
     printf("\n");
     traversal(root);
+
 
 }
 

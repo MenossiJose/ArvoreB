@@ -1,8 +1,15 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "btree.h"
-#include "btree.c"
-#define MIN 2
+#include "insertion.h"
+// Insertion operation
+void insertion(int item) {
+    int flag, i;
+    struct BTreeNode *child;
+
+    flag = setValueInNode(item, &i, root, &child);
+    if (flag)
+        root = createNode(i, child);
+}
 
 void splitNode(int item, int *pval, int pos, struct BTreeNode *node,
                struct BTreeNode *child, struct BTreeNode **newNode) {
@@ -33,12 +40,3 @@ void splitNode(int item, int *pval, int pos, struct BTreeNode *node,
     node->count--;
 }
 
-// Insertion operation
-void insertion(int item) {
-    int flag, i;
-    struct BTreeNode *child;
-
-    flag = setValueInNode(item, &i, root, &child);
-    if (flag)
-        root = createNode(i, child);
-}

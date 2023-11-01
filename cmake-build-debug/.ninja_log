@@ -1,3 +1,9 @@
 # ninja log v5
-0	222	7201302253337463	CMakeFiles/ArvoreB.dir/main.c.obj	8657fa094f4204a
+18	135	7205063261767854	CMakeFiles/ArvoreB.dir/main.c.obj	8657fa094f4204a
 224	502	7201302256086177	ArvoreB.exe	11b1d1275aac981c
+12	113	7205063261536999	CMakeFiles/ArvoreB.dir/insertion.c.obj	25a5ae44d0fe6da3
+7	125	7205063261647540	CMakeFiles/ArvoreB.dir/deletion.c.obj	2673cfd76c523af5
+0	136	7205063261782908	CMakeFiles/ArvoreB.dir/btree.c.obj	a49ff7f90fe77e0e
+11	153	7205074266403631	CMakeFiles/ArvoreB.dir/insertion.c.obj	25a5ae44d0fe6da3
+3	156	7205074266479411	CMakeFiles/ArvoreB.dir/btree.c.obj	a49ff7f90fe77e0e
+17	157	7205074266479411	CMakeFiles/ArvoreB.dir/deletion.c.obj	2673cfd76c523af5
