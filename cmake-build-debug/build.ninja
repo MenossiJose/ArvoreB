@@ -49,14 +49,20 @@ cmake_ninja_workdir = C$:/Users/jose_/CLionProjects/ArvoreB/cmake-build-debug/
 
 build cmake_object_order_depends_target_ArvoreB: phony || CMakeFiles/ArvoreB.dir
 
-build CMakeFiles/ArvoreB.dir/main.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/Users/jose_/CLionProjects/ArvoreB/main.c || cmake_object_order_depends_target_ArvoreB
-  DEP_FILE = CMakeFiles\ArvoreB.dir\main.c.obj.d
+build CMakeFiles/ArvoreB.dir/btree.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/Users/jose_/CLionProjects/ArvoreB/btree.c || cmake_object_order_depends_target_ArvoreB
+  DEP_FILE = CMakeFiles\ArvoreB.dir\btree.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ArvoreB.dir
   OBJECT_FILE_DIR = CMakeFiles\ArvoreB.dir
 
-build CMakeFiles/ArvoreB.dir/bst.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/Users/jose_/CLionProjects/ArvoreB/bst.c || cmake_object_order_depends_target_ArvoreB
-  DEP_FILE = CMakeFiles\ArvoreB.dir\bst.c.obj.d
+build CMakeFiles/ArvoreB.dir/deletion.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/Users/jose_/CLionProjects/ArvoreB/deletion.c || cmake_object_order_depends_target_ArvoreB
+  DEP_FILE = CMakeFiles\ArvoreB.dir\deletion.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ArvoreB.dir
+  OBJECT_FILE_DIR = CMakeFiles\ArvoreB.dir
+
+build CMakeFiles/ArvoreB.dir/insertion.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/Users/jose_/CLionProjects/ArvoreB/insertion.c || cmake_object_order_depends_target_ArvoreB
+  DEP_FILE = CMakeFiles\ArvoreB.dir\insertion.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ArvoreB.dir
   OBJECT_FILE_DIR = CMakeFiles\ArvoreB.dir
@@ -69,7 +75,7 @@ build CMakeFiles/ArvoreB.dir/bst.c.obj: C_COMPILER__ArvoreB_unscanned_Debug C$:/
 #############################################
 # Link the executable ArvoreB.exe
 
-build ArvoreB.exe: C_EXECUTABLE_LINKER__ArvoreB_Debug CMakeFiles/ArvoreB.dir/main.c.obj CMakeFiles/ArvoreB.dir/bst.c.obj
+build ArvoreB.exe: C_EXECUTABLE_LINKER__ArvoreB_Debug CMakeFiles/ArvoreB.dir/btree.c.obj CMakeFiles/ArvoreB.dir/deletion.c.obj CMakeFiles/ArvoreB.dir/insertion.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ArvoreB.dir

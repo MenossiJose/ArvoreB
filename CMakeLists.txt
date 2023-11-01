@@ -3,5 +3,7 @@ project(ArvoreB C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ArvoreB main.c
-        bst.c)
+add_executable(ArvoreB
+        btree.c
+        deletion.c
+        insertion.c)

@@ -53,7 +53,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -91,7 +92,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -100,13 +102,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.c",
+			"path" : "btree.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "bst.c",
+			"path" : "deletion.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "insertion.c",
 			"sourceGroupIndex" : 0
 		}
 	],
