@@ -1,2 +1,3 @@
 # ArvoreB
-Implementação da Árvore B na matéria EC44A
+## Jose Antonio Menossi 2312670  
+## Amanda Moura Cavalcante 2261049
